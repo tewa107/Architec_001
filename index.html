@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ARCHI.FOLIO รวมผลงานออกแบบสถาปัตยกรรม">
+  <title lang="en">ARCHI.FOLIO | Architecture Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="#home">ARCHI<span>.</span>FOLIO</a>
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="เปิดเมนู" aria-expanded="false" aria-controls="navMenu">
+      ☰
+    </button>
+
+    <nav id="navMenu">
+      <a href="#home">หน้าแรก</a>
+      <a href="#work">ผลงาน</a>
+      <a href="#about">เกี่ยวกับฉัน</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow" lang="en">ARCHITECTURE · DESIGN · CREATIVITY</p>
+        <h1 lang="en">Designing spaces.<br>Creating <span>stories.</span></h1>
+        <p class="hero-description">
+          พื้นที่ที่ดีไม่ได้มีเพียงความสวยงาม
+          แต่ยังบอกเล่าเรื่องราวและสร้างประสบการณ์ให้ผู้คน
+        </p>
+        <a href="#work" class="button">สำรวจผลงาน ↗</a>
+      </div>
+      <div class="hero-image" role="img"
+        aria-label="ภาพสถาปัตยกรรมบ้านสมัยใหม่"></div>
+      <div class="hero-label" lang="en">SELECTED WORKS — 2026</div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" lang="en">PORTFOLIO / 01</p>
+          <h2 lang="en">Selected Works<span>.</span></h2>
+        </div>
+        <p>ผลงานออกแบบและแนวคิดทางสถาปัตยกรรม</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="กรองประเภทผลงาน">
+        <button class="filter active" type="button" data-filter="all" aria-pressed="true">ทั้งหมด</button>
+        <button class="filter" type="button" data-filter="house" aria-pressed="false">บ้าน</button>
+        <button class="filter" type="button" data-filter="commercial" aria-pressed="false">อาคารพาณิชย์</button>
+        <button class="filter" type="button" data-filter="concept" aria-pressed="false">แนวคิด</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card" data-category="house">
+          <img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"
+            alt="บ้านโมเดิร์นและพื้นที่สวน"
+            loading="lazy">
+          <div class="project-info">
+            <span lang="en">RESIDENTIAL / 01</span>
+            <h3 lang="en">Courtyard House</h3>
+            <p>บ้านโมเดิร์นที่เชื่อมต่อธรรมชาติ</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="commercial">
+          <img
+            src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1000&q=85"
+            alt="อาคารสถาปัตยกรรมร่วมสมัย"
+            loading="lazy">
+          <div class="project-info">
+            <span lang="en">COMMERCIAL / 02</span>
+            <h3 lang="en">Urban Studio</h3>
+            <p>พื้นที่ทำงานสำหรับคนสร้างสรรค์</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="concept">
+          <img
+            src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1000&q=85"
+            alt="แนวคิดรูปทรงสถาปัตยกรรม"
+            loading="lazy">
+          <div class="project-info">
+            <span lang="en">CONCEPT / 03</span>
+            <h3 lang="en">Form & Light</h3>
+            <p>การทดลองรูปทรง แสง และเงา</p>
+          </div>
+        </article>
+      </div>
+      <p class="note">ภาพตัวอย่างใช้สำหรับจัดหน้าพอร์ตโฟลิโอ
+        สามารถเปลี่ยนเป็นผลงานจริงของคุณได้</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-number" lang="en">02 / ABOUT</div>
+      <div>
+        <p class="eyebrow" lang="en">THE DESIGNER</p>
+        <h2 lang="en">Ideas become<br><span>spaces.</span></h2>
+        <p>
+          สวัสดี! ฉันเป็นนักเรียนที่สนใจงานสถาปัตยกรรม
+          การออกแบบพื้นที่ และการสร้างสรรค์สิ่งใหม่ ๆ
+          เว็บไซต์นี้รวบรวมแนวคิด กระบวนการทำงาน
+          และผลงานที่ได้พัฒนาขึ้น
+        </p>
+        <a href="#contact" class="text-link">มาทำความรู้จักกัน ↗</a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow" lang="en">HAVE A PROJECT IN MIND?</p>
+      <h2 lang="en">Let's create<br>something <span>meaningful.</span></h2>
+      <p>สนใจพูดคุยหรือแลกเปลี่ยนแนวคิดด้านการออกแบบ</p>
+      <a class="button button-light"
+        href="mailto:your-email@example.com">ติดต่อฉัน ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#home">ARCHI<span>.</span>FOLIO</a>
+    <p lang="en">© 2026 ARCHI.FOLIO — Architecture Portfolio</p>
+    <a href="#home">กลับขึ้นด้านบน ↑</a>
+  </footer>
+
+</body>
+</html>
